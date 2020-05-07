@@ -31,3 +31,25 @@ export function findWinner(squares)
     }
     return null;
 }
+
+export function are_all_squares_clicked(squares)
+{
+    let count=0;
+    squares.forEach(function(item)
+    {
+        if (item!=null)
+        {
+            count++;
+        }
+    });
+
+    if (count===9)
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
+} 
